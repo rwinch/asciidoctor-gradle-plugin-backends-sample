@@ -1,0 +1,6 @@
+= Book Title
+Rob Winch
+:imagesdir: images
+
+// https://github.com/asciidoctor/asciidoctor-epub3/issues/7
+include::_includes/asciidoctor-epub3-7.adoc[]

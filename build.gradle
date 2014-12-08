@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        jcenter()
+        // necessary only until jcenter contains the extensions
+        maven { url 'http://dl.bintray.com/asciidoctor/maven/' }
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.1'
+        classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.6'
+        classpath 'org.asciidoctor:asciidoctorj-epub3:1.5.0-alpha.4'
+    }
+}
+
+apply plugin: 'org.asciidoctor.gradle.asciidoctor'
+
+asciidoctorj {
+    version = '1.5.2'
+}
+
+asciidoctor {
+    backends = ['html5','pdf','epub3']
+    options doctype: 'book'
+}
