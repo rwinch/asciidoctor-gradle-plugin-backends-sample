@@ -1,8 +1,6 @@
 buildscript {
     repositories {
         jcenter()
-        // necessary only until jcenter contains the extensions
-        maven { url 'http://dl.bintray.com/asciidoctor/maven/' }
     }
 
     dependencies {
