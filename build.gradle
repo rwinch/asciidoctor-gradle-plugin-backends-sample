@@ -22,3 +22,5 @@ asciidoctor {
     backends = ['html5','pdf','epub3']
     options doctype: 'book'
 }
+
+defaultTasks 'clean', 'asciidoctor'
